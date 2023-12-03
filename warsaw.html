@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Warsaw</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+a{
+  text-decoration: none;
+  font-family: sans-serif;
+  color: blue;
+}
+
+</style>
+</head>
+<body>
+<header>
+  <h2>Datas/Links</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="index.html">Back</a></li>
+      <li><a href="pictus.html">Picture</a></li>
+    </ul>
+  </nav>
+  <article>
+    <h1>Warsaw</h1>
+    <p>Warsaw, officially the Capital City of Warsaw, is the capital and largest city of Poland. The metropolis stands on the River Vistula in east-central Poland. Its population is officially estimated at 1.86 million residents within a greater metropolitan area of 3.1 million residents, which makes Warsaw the 6th most-populous city in the European Union. The city area measures 517 km2 (200 sq mi) and comprises 18 districts, while the metropolitan area covers 6,100 km2 (2,355 sq mi). Warsaw is an alpha global city, a major cultural, political and economic hub, and the country's seat of government. It is also capital of the Masovian Voivodeship.</p>
+    </article>
+</section>
+
+<footer>
+  <p></p>
+</footer>
+
+</body>
+</html>
